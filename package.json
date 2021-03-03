@@ -1,0 +1,54 @@
+{
+  "name": "@spherium/swap",
+  "description": "Core contracts for the Spherium swap protocol",
+  "version": "1.0.0",
+  "homepage": "https://spherium.finance",
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/spherium/spherium-swap"
+  },
+  "keywords": [
+    "spherium",
+    "ethereum",
+    "core",
+    "spherium-swap"
+  ],
+  "files": [
+    "contracts",
+    "build"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "devDependencies": {
+    "@truffle/hdwallet-provider": "^1.1.0",
+    "@types/chai": "^4.2.6",
+    "@types/mocha": "^5.2.7",
+    "chai": "^4.2.0",
+    "dotenv": "^8.2.0",
+    "ethereum-waffle": "^2.4.1",
+    "ethereumjs-util": "^6.2.0",
+    "ganache-cli": "^6.11.0",
+    "mocha": "^6.2.2",
+    "prettier": "^1.19.1",
+    "rimraf": "^3.0.0",
+    "solc": "0.6.12",
+    "truffle": "^5.1.47",
+    "truffle-flattener": "^1.5.0",
+    "ts-node": "^8.5.4",
+    "typescript": "^3.7.3"
+  },
+  "scripts": {
+    "lint": "yarn prettier ./test/*.ts --check",
+    "lint:fix": "yarn prettier ./test/*.ts --write",
+    "clean": "rimraf ./build/",
+    "precompile": "yarn clean",
+    "compile": "waffle .waffle.json",
+    "pretest": "yarn compile",
+    "test": "mocha",
+    "deploy": "yarn truffle migrate --network development",
+    "deploy:ropsten": "yarn truffle migrate --network ropsten",
+    "prepublishOnly": "yarn test"
+  },
+  "license": "GPL-3.0-or-later"
+}
