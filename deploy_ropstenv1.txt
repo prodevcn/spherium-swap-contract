@@ -1,0 +1,169 @@
+Compiling your contracts...
+===========================
+> Everything is up to date, there is nothing to compile.
+SpheriumTestWallet2020
+SpheriumTestWallet2020
+
+Starting migrations...
+======================
+> Network name:    'ropsten'
+> Network id:      3
+> Block gas limit: 8000000 (0x7a1200)
+
+
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+   > transaction hash:    0x7cdbdb2093b3a0b283fe70735d48ed22c2f81310a49271c49bde603d996236e9
+   > Blocks: 1            Seconds: 24
+   > contract address:    0x89bD15D77DdC0b812Fe35eB1006F8e7802d5cA4F
+   > block number:        8910166
+   > block timestamp:     1603137473
+   > account:             0x1ce24E180dA5415E349C91442CC9b9Fdd7f55111
+   > balance:             3.99692612
+   > gas used:            153694 (0x2585e)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00307388 ETH
+
+   Pausing for 2 confirmations...
+   ------------------------------
+   > confirmation number: 1 (block: 8910167)
+   > confirmation number: 2 (block: 8910168)
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.00307388 ETH
+
+
+2_deploy_factory.js
+===================
+
+   Deploying 'UniswapV2Factory'
+   ----------------------------
+   > transaction hash:    0xca237d79b282779da459a38c1ed2fd15f1dc11573621ab07c52cf544cd00db62
+   > Blocks: 0            Seconds: 4
+   > contract address:    0x0Cc6F3295AC3316dE8144c1D42Be7Ff39Aca9019
+   > block number:        8910170
+   > block timestamp:     1603137559
+   > account:             0x1ce24E180dA5415E349C91442CC9b9Fdd7f55111
+   > balance:             3.94881504
+   > gas used:            2363299 (0x240fa3)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.04726598 ETH
+
+   Pausing for 2 confirmations...
+   ------------------------------
+   > confirmation number: 1 (block: 8910170)
+   > confirmation number: 2 (block: 8910171)
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.04726598 ETH
+
+
+3_deploy_router.js
+==================
+
+   Deploying 'WETH'
+   ----------------
+   > transaction hash:    0x3c8e89d6f2a9316e4f338ade687874a732e3085ead4e653f5ddb9d3a06669d29
+   > Blocks: 1            Seconds: 12
+   > contract address:    0xF5FFa9D782b8434Ea35f0fFB88d530d2a4DEfA1f
+   > block number:        8910174
+   > block timestamp:     1603137609
+   > account:             0x1ce24E180dA5415E349C91442CC9b9Fdd7f55111
+   > balance:             3.93815336
+   > gas used:            505829 (0x7b7e5)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.01011658 ETH
+
+   Pausing for 2 confirmations...
+   ------------------------------
+   > confirmation number: 1 (block: 8910175)
+   > confirmation number: 2 (block: 8910176)
+
+   Deploying 'UniswapV2Router02'
+   -----------------------------
+   > transaction hash:    0xe60dd22492dd9b2626c98b53b58344e82c9d25142d9f2b71c6d9339ef6349f81
+   > Blocks: 2            Seconds: 4
+   > contract address:    0xFE83De076c06829E473BbaeAe869b98baaFAEEa5
+   > block number:        8910179
+   > block timestamp:     1603137645
+   > account:             0x1ce24E180dA5415E349C91442CC9b9Fdd7f55111
+   > balance:             3.77977418
+   > gas used:            3875349 (0x3b2215)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.07750698 ETH
+
+   Pausing for 2 confirmations...
+   ------------------------------
+   > confirmation number: 1 (block: 8910180)
+   > confirmation number: 2 (block: 8910181)
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.08762356 ETH
+
+
+4_create_pairs.js
+=================
+Creating Mock Tokens:
+TOK01 0x5ceB6Bb69071B48B25cCb1845BE56BD9842e3fd2
+TOK02 0xC538c73AF39d8fcD830C38eEbcCc6A1c6c206509
+TOK03 0xDc8cD95656Af2969d5CafD7DFfA8Af1d9bB87cf5
+TOK04 0x796227F3516338fD0801f414ea2F75c2aB954c60
+TOK05 0xF5009D3b88b8B9faB136BfcFD4813f59a583A99b
+TOK06 0xe36aB7cb76f1efe61B55901eb3238557D2002950
+TOK07 0x0B924d30F3bf939F4d2E185f289c1bac3c962AcE
+TOK08 0x0cd35bb0Cc34e9182d8F3baA02A55Cec7D7A596b
+
+   > Saving migration to chain.
+   -------------------------------------
+   > Total cost:                   0 ETH
+
+
+5_deploy_multicall.js
+=====================
+
+   Deploying 'Multicall'
+   ---------------------
+   > transaction hash:    0xe2da1ca236cc3e22d9feb3f42de0ece3e9b2a6c149fd7bae2404c115d449d8bf
+   > Blocks: 2            Seconds: 20
+   > contract address:    0x12C9B8C6b7a902CD0ea73972ece5ffBd4688F3c8
+   > block number:        8910283
+   > block timestamp:     1603138879
+   > account:             0x1ce24E180dA5415E349C91442CC9b9Fdd7f55111
+   > balance:             2.87622718
+   > gas used:            352714 (0x561ca)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00705428 ETH
+
+   Pausing for 2 confirmations...
+   ------------------------------
+   > confirmation number: 1 (block: 8910284)
+   > confirmation number: 2 (block: 8910285)
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.00705428 ETH
+
+
+Summary
+=======
+> Total deployments:   5
+> Final cost:          0.1450177 ETH
+
+
+Done in 1607.63s.
+

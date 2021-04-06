@@ -1,0 +1,10 @@
+PATH											DETAILS
+
+
+.env.local 										updated with localhost settings
+src\hooks\useContract.ts								updated WETH address with local one manually
+src\constants\index.ts									updated the router address
+node_modules\@uniswap\sdk\dist\constants.d.ts						updated the factory address & hash init
+src\constants\multicall\index.ts							updated multicall contract for ropsten
+
+
